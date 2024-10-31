@@ -1002,3 +1002,20 @@ footer small {
   font-size: 0.8rem;
   letter-spacing: 1px;
 }
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-links .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  .project-links {
+    justify-content: center;
+  }
+}

@@ -94,6 +94,18 @@
           "Node",
           "Tauri",
           "Vite"
+        ],
+        "links": [
+          {
+            "url": "https://github.com/yourusername/protonote",
+            "text": "View Source",
+            "show": false
+          },
+          {
+            "url": "https://protonote-demo.example.com",
+            "text": "Live Demo",
+            "show": false
+          }
         ]
       },
       {
@@ -113,6 +125,18 @@
           "Express",
           "MongoDB",
           "Vite"
+        ],
+        "links": [
+          {
+            "url": "https://github.com/yourusername/protoassess",
+            "text": "View Source",
+            "show": false
+          },
+          {
+            "url": "https://protoassess.example.com",
+            "text": "Live Demo",
+            "show": false
+          }
         ]
       }
     ]

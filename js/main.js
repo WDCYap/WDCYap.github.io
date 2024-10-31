@@ -464,6 +464,27 @@ function renderProjects(projectsData) {
     detailsSection.appendChild(projectDescription);
     detailsSection.appendChild(toolsList);
 
+    if (project.links && project.links.length > 0) {
+      const linksContainer = document.createElement("div");
+      linksContainer.className = "project-links mt-3";
+
+      project.links.forEach(link => {
+        if (link.show) {
+          const linkElement = document.createElement("a");
+          linkElement.href = link.url;
+          linkElement.className = "btn btn-primary me-2 mb-2";
+          linkElement.target = "_blank";
+          linkElement.rel = "noopener noreferrer";
+          linkElement.textContent = link.text;
+          linksContainer.appendChild(linkElement);
+        }
+      });
+
+      if (linksContainer.children.length > 0) {
+        detailsSection.appendChild(linksContainer);
+      }
+    }
+
     projectContent.appendChild(imageSection);
     projectContent.appendChild(detailsSection);
     projectItem.appendChild(projectContent);
