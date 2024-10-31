@@ -38,22 +38,26 @@ function toggleTheme() {
 document.addEventListener("DOMContentLoaded", initializeTheme);
 
 function typeLoadingText() {
-  const text = "WY//DEV";
-  const loadingText = document.getElementById("loading-text");
-  let index = 0;
+  return fetch("assets/data.json")
+    .then(response => response.json())
+    .then(data => {
+      const text = data.site.brand || "PROTO//FOLIO";
+      const loadingText = document.getElementById("loading-text");
+      let index = 0;
 
-  return new Promise((resolve) => {
-    function type() {
-      if (index < text.length) {
-        loadingText.textContent += text.charAt(index);
-        index++;
-        setTimeout(type, 150);
-      } else {
-        setTimeout(resolve, 500);
-      }
-    }
-    type();
-  });
+      return new Promise((resolve) => {
+        function type() {
+          if (index < text.length) {
+            loadingText.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 150);
+          } else {
+            setTimeout(resolve, 500);
+          }
+        }
+        type();
+      });
+    });
 }
 
 function showPage() {
@@ -208,9 +212,23 @@ fetch("assets/data.json")
       document.getElementById("contact").style.display = "block";
     }
 
-    if (data.site && data.site.title) {
-      document.getElementById("site-title").textContent = data.site.title;
-      document.title = data.site.title;
+    if (data.site) {
+      if (data.site.title) {
+        document.getElementById("site-title").textContent = data.site.title;
+        document.title = data.site.title;
+      }
+      if (data.site.brand) {
+        document.querySelector(".navbar-brand").textContent = data.site.brand;
+      }
+      if (data.site.favicon) {
+        const favicon = document.querySelector("link[rel='icon']") || document.createElement('link');
+        favicon.type = 'image/x-icon';
+        favicon.rel = 'icon';
+        favicon.href = data.site.favicon;
+        if (!document.querySelector("link[rel='icon']")) {
+          document.head.appendChild(favicon);
+        }
+      }
     }
   })
   .catch((error) => {

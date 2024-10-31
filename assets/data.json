@@ -1,6 +1,8 @@
 {
   "site": {
-    "title": "WY//DEV"
+    "title": "WY//DEV",
+    "brand": "WY//DEV",
+    "favicon": "assets/img/favicon.ico"
   },
   "about": {
     "title": "Hello, I am William Yap",
