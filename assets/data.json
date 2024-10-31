@@ -81,7 +81,7 @@
         "title": "ProtoNote (Work in Progress)",
         "description": [
           "Note taking app with AI-powered features.",
-          "Utilizes AI to generate notes."
+          "Utilizes AI to generate notes using API key or local LLM."
         ],
         "image": "assets/img/project1.jpg",
         "tools": [
