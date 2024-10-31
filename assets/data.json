@@ -1,0 +1,127 @@
+{
+  "site": {
+    "title": "WY//DEV"
+  },
+  "about": {
+    "title": "Hello, I am William Yap",
+    "description": [
+      "Seeking opportunities to enhance skills, stay updated on industry trends, and contribute with passion and dedication.",
+      "Passionate about creating responsive and user-friendly web applications."
+    ],
+    "image": {
+      "light": "assets/img/picture.jpg",
+      "dark": "assets/img/picture-dark.jpg"
+    },
+    "titles": ["Frontend Developer", "Web Developer"]
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "title": "Bachelor of Science in Information Technology",
+        "institution": "Wesleyan University-Philippines",
+        "date": "2020-2024",
+        "description": ["Magna Cum Laude", "Dean's Lister"]
+      },
+      {
+        "title": "Senior Highschool Graduate",
+        "institution": "Nueva Ecija University of Science and Technology",
+        "date": "2018-2020",
+        "description": ["With Honors"]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "title": "Front-end Web Developer Intern",
+        "company": "MWeeb Information Technology Inc.",
+        "date": "March-May 2024",
+        "description": [
+          "Assisted in developing client projects",
+          "Documented company's system",
+          "Brainstormed for new features"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "technicalSkills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Bootstrap",
+      "Tailwind CSS",
+      "shadcn",
+      "Node",
+      "Deno",
+      "Express",
+      "MongoDB",
+      "MySQL",
+      "Git",
+      "Electron",
+      "Tauri",
+      "Vite"
+    ],
+    "softSkills": [
+      "Problem Solving",
+      "Communication",
+      "Adaptability",
+      "Teamwork"
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "title": "ProtoNote (Work in Progress)",
+        "description": [
+          "Note taking app with AI-powered features.",
+          "Utilizes AI to generate notes."
+        ],
+        "image": "assets/img/project1.jpg",
+        "tools": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "shadcn",
+          "Node",
+          "Tauri",
+          "Vite"
+        ]
+      },
+      {
+        "title": "ProtoAssess (Work in Progress)",
+        "description": [
+          "Assessment tool for test taking.",
+          "Offers a seamless experience for creating, managing, and taking tests."
+        ],
+        "image": "assets/img/project2.jpg",
+        "tools": [
+          "React",
+          "Remix",
+          "TypeScript",
+          "Tailwind CSS",
+          "shadcn",
+          "Deno 2",
+          "Express",
+          "MongoDB",
+          "Vite"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "email": "net.wyap@gmail.com",
+    "phone": "+63 961 540 4220",
+    "linkedin": "https://www.linkedin.com/in/william-y-dev/",
+    "resume": {
+      "show": true,
+      "file": "assets/resume.pdf"
+    }
+  }
+}
