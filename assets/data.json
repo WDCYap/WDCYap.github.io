@@ -80,7 +80,33 @@
     "title": "Projects",
     "items": [
       {
-        "title": "ProtoNote (Work in Progress)",
+        "title": "PROTO//FOLIO",
+        "description": [
+          "A modern, responsive portfolio website.",
+          "Data is fetched from JSON file."
+        ],
+        "image": "assets/img/project1.jpg",
+        "tools": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+        "links": [
+          {
+            "url": "https://github.com/WDCYap/protofolio",
+            "text": "View Source",
+            "show": true
+          },
+          {
+            "url": "https://wdcyap.github.io/",
+            "text": "Live Demo",
+            "show": true
+          },
+          {
+            "url": "https://wdcyap.github.io/protofolio",
+            "text": "Template Demo",
+            "show": true
+          }
+        ]
+      },
+      {
+        "title": "PROTO//NOTE (Work in Progress)",
         "description": [
           "Note taking app with AI-powered features.",
           "Utilizes AI to generate notes using API key or local LLM."
@@ -92,24 +118,24 @@
           "Tailwind CSS",
           "shadcn",
           "Node",
-          "Tauri",
-          "Vite"
+          "Vite",
+          "Tauri"
         ],
         "links": [
           {
-            "url": "https://github.com/yourusername/protonote",
+            "url": "https://github.com/WDCYap/protonote",
             "text": "View Source",
             "show": false
           },
           {
-            "url": "https://protonote-demo.example.com",
+            "url": "https://wdcyap.github.io/protonote",
             "text": "Live Demo",
             "show": false
           }
         ]
       },
       {
-        "title": "ProtoAssess (Work in Progress)",
+        "title": "PROTO//ASSESS (Work in Progress)",
         "description": [
           "Assessment tool for test taking.",
           "Offers a seamless experience for creating, managing, and taking tests."
@@ -128,12 +154,12 @@
         ],
         "links": [
           {
-            "url": "https://github.com/yourusername/protoassess",
+            "url": "https://github.com/WDCYap/protoassess",
             "text": "View Source",
             "show": false
           },
           {
-            "url": "https://protoassess.example.com",
+            "url": "https://wdcyap.github.io/",
             "text": "Live Demo",
             "show": false
           }
