@@ -501,6 +501,29 @@ function renderProjects(projectsData) {
 
     indicatorsContainer.appendChild(indicator);
   });
+
+  handleProjectLinks();
+}
+
+function handleProjectLinks() {
+  const projectLinks = document.querySelectorAll('.project-links a');
+  
+  projectLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      
+      if (href.startsWith('#')) {
+        e.preventDefault();
+        const targetSection = document.querySelector(href);
+        
+        if (targetSection) {
+          targetSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
+  });
 }
 
 function updateProfileImage(theme) {

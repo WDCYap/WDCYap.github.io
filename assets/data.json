@@ -89,17 +89,17 @@
         "tools": ["HTML", "CSS", "JavaScript", "Bootstrap"],
         "links": [
           {
-            "url": "https://github.com/WDCYap/protofolio",
+            "url": "https://github.com/WDCYap/ProtoFolio",
             "text": "View Source",
             "show": true
           },
           {
-            "url": "https://wdcyap.github.io/",
+            "url": "#about",
             "text": "Live Demo",
             "show": true
           },
           {
-            "url": "https://wdcyap.github.io/protofolio",
+            "url": "https://wdcyap.github.io/ProtoFolio",
             "text": "Template Demo",
             "show": true
           }
