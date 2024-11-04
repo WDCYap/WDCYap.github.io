@@ -107,6 +107,7 @@
       },
       {
         "title": "PROTO//NOTE (Work in Progress)",
+        "show": false,
         "description": [
           "Note taking app with AI-powered features.",
           "Utilizes AI to generate notes using API key or local LLM."
@@ -136,6 +137,7 @@
       },
       {
         "title": "PROTO//ASSESS (Work in Progress)",
+        "show": false,
         "description": [
           "Assessment tool for test taking.",
           "Offers a seamless experience for creating, managing, and taking tests."

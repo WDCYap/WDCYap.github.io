@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", initializeTheme);
 
 function typeLoadingText() {
   return fetch("assets/data.json")
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       const text = data.site.brand || "PROTO//FOLIO";
       const loadingText = document.getElementById("loading-text");
       let index = 0;
@@ -221,9 +221,11 @@ fetch("assets/data.json")
         document.querySelector(".navbar-brand").textContent = data.site.brand;
       }
       if (data.site.favicon) {
-        const favicon = document.querySelector("link[rel='icon']") || document.createElement('link');
-        favicon.type = 'image/x-icon';
-        favicon.rel = 'icon';
+        const favicon =
+          document.querySelector("link[rel='icon']") ||
+          document.createElement("link");
+        favicon.type = "image/x-icon";
+        favicon.rel = "icon";
         favicon.href = data.site.favicon;
         if (!document.querySelector("link[rel='icon']")) {
           document.head.appendChild(favicon);
@@ -421,7 +423,16 @@ function renderProjects(projectsData) {
   projectsContainer.innerHTML = "";
   indicatorsContainer.innerHTML = "";
 
-  projectsData.items.forEach((project, index) => {
+  const visibleProjects = projectsData.items.filter(
+    (project) => project.show !== false
+  );
+
+  if (visibleProjects.length === 0) {
+    document.getElementById("projects").style.display = "none";
+    return;
+  }
+
+  visibleProjects.forEach((project, index) => {
     const projectItem = document.createElement("div");
     projectItem.className = `carousel-item ${index === 0 ? "active" : ""}`;
 
@@ -468,7 +479,7 @@ function renderProjects(projectsData) {
       const linksContainer = document.createElement("div");
       linksContainer.className = "project-links mt-3";
 
-      project.links.forEach(link => {
+      project.links.forEach((link) => {
         if (link.show) {
           const linkElement = document.createElement("a");
           linkElement.href = link.url;
@@ -506,19 +517,19 @@ function renderProjects(projectsData) {
 }
 
 function handleProjectLinks() {
-  const projectLinks = document.querySelectorAll('.project-links a');
-  
-  projectLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      const href = link.getAttribute('href');
-      
-      if (href.startsWith('#')) {
+  const projectLinks = document.querySelectorAll(".project-links a");
+
+  projectLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      const href = link.getAttribute("href");
+
+      if (href.startsWith("#")) {
         e.preventDefault();
         const targetSection = document.querySelector(href);
-        
+
         if (targetSection) {
           targetSection.scrollIntoView({
-            behavior: 'smooth'
+            behavior: "smooth",
           });
         }
       }
