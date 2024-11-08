@@ -1,0 +1,78 @@
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: var(--accent-color);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.timeline-item h4 {
+  margin-bottom: 0.25rem;
+}
+
+.timeline-item .institution,
+.timeline-item .company {
+  color: var(--muted-color);
+  margin-bottom: 0.25rem;
+}
+
+.timeline-item .date {
+  color: var(--muted-color);
+  margin-bottom: 1rem;
+}
+
+.timeline-item p:not(.institution):not(.company):not(.date) {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.timeline-item p:not(.institution):not(.company):not(.date)::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover::before {
+  background-color: var(--hover-color);
+  transform: scale(1.2);
+}
+
+.timeline-item:hover {
+  transform: translateX(10px);
+}
+
+section.visible .timeline-item {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: calc(0.2s * var(--index, 0));
+}
