@@ -99,6 +99,8 @@ function updateNavigation(sections) {
       a.href = `#${section.id}`;
       a.textContent = section.id.charAt(0).toUpperCase() + section.id.slice(1);
 
+      a.addEventListener("click", (e) => handleNavigation(e, `#${section.id}`));
+
       li.appendChild(a);
       navList.appendChild(li);
     }
@@ -207,6 +209,12 @@ async function createSection(sectionData) {
     container.innerHTML += `<p>Error loading section ${sectionData.id}</p>`;
   }
 
+  container.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", (e) =>
+      handleNavigation(e, link.getAttribute("href"))
+    );
+  });
+
   section.appendChild(container);
   return section;
 }
@@ -231,6 +239,14 @@ function handleSectionVisibility() {
       observer.observe(section);
     }
   });
+}
+
+function handleNavigation(event, targetId) {
+  event.preventDefault();
+  const targetSection = document.querySelector(targetId);
+  if (targetSection) {
+    targetSection.scrollIntoView({ behavior: "smooth" });
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
