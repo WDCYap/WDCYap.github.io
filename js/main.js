@@ -211,7 +211,7 @@ async function createSection(sectionData) {
 
   container.querySelectorAll('a[href^="#"]').forEach((link) => {
     const targetId = link.getAttribute("href");
-    if (document.querySelector(`section${targetId}`)) {
+    if (targetId !== "#" && document.querySelector(`section${targetId}`)) {
       link.addEventListener("click", (e) => handleNavigation(e, targetId));
     }
   });
