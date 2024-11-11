@@ -210,9 +210,10 @@ async function createSection(sectionData) {
   }
 
   container.querySelectorAll('a[href^="#"]').forEach((link) => {
-    link.addEventListener("click", (e) =>
-      handleNavigation(e, link.getAttribute("href"))
-    );
+    const targetId = link.getAttribute("href");
+    if (document.querySelector(`section${targetId}`)) {
+      link.addEventListener("click", (e) => handleNavigation(e, targetId));
+    }
   });
 
   section.appendChild(container);
