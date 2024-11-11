@@ -63,7 +63,16 @@ function setupResumeLink(link, item) {
 }
 
 function setupExternalLink(link, item) {
-  link.href = item.value;
-  link.target = "_blank";
-  link.rel = "noopener noreferrer";
+  switch (item.type) {
+    case "email":
+      link.href = `mailto:${item.value}`;
+      break;
+    case "phone":
+      link.href = `tel:${item.value}`;
+      break;
+    default:
+      link.href = item.value;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+  }
 }
