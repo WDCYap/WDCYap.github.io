@@ -58,12 +58,21 @@
       "layout": "timeline",
       "items": [
         {
+          "title": "Front-end Developer Freelance",
+          "subtitle": "MWeeb Information Technology Inc.",
+          "date": "June 2024 - January 2025",
+          "details": [
+            "Developed the accounting system further by adding new features and fixing bugs"
+          ]
+        },
+        {
           "title": "Front-end Developer Intern",
           "subtitle": "MWeeb Information Technology Inc.",
-          "date": "March-May 2024",
+          "date": "March - May 2024",
           "details": [
-            "Assisted in developing client projects",
-            "Documented company's system",
+            "Documented the company's system for improved efficiency and future reference",
+            "Developed a project management dashboard using ReactJS",
+            "Assisted in developing an accounting management system",
             "Brainstormed for new features"
           ]
         }
@@ -81,15 +90,10 @@
           "HTML",
           "CSS",
           "JavaScript",
-          "TypeScript",
           "React",
           "Bootstrap",
-          "Tailwind CSS",
-          "shadcn",
-          "Node",
           "MySQL",
-          "Git",
-          "Vite"
+          "Git"
         ]
       },
       "right": {
