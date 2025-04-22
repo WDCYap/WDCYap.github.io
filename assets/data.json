@@ -1,0 +1,252 @@
+{
+  "site": {
+    "title": "WY//DEV",
+    "brand": "WY//DEV",
+    "favicon": "assets/img/favicon.ico",
+    "footer": {
+      "show": true,
+      "text": "PROTO//FOLIO by William Yap"
+    }
+  },
+  "sections": [
+    {
+      "id": "about",
+      "show": true,
+      "nav": true,
+      "layout": "split",
+      "left": {
+        "heading": "William Yap",
+        "typingText": ["Frontend Developer", "Web Developer"],
+        "description": [
+          "Seeking opportunities to enhance skills, stay updated on industry trends, and contribute with passion and dedication.",
+          "Passionate about creating responsive and user-friendly web applications."
+        ]
+      },
+      "right": {
+        "image": {
+          "light": "assets/img/picture.jpg",
+          "dark": "assets/img/picture-dark.jpg"
+        }
+      }
+    },
+    {
+      "id": "education",
+      "show": true,
+      "nav": true,
+      "title": "Education",
+      "layout": "timeline",
+      "items": [
+        {
+          "title": "Bachelor of Science in Information Technology",
+          "subtitle": "Wesleyan University-Philippines",
+          "date": "2020-2024",
+          "details": ["Magna Cum Laude", "Dean's Lister"]
+        },
+        {
+          "title": "Senior Highschool Graduate",
+          "subtitle": "Nueva Ecija University of Science and Technology",
+          "date": "2018-2020",
+          "details": ["With Honors"]
+        }
+      ]
+    },
+    {
+      "id": "experience",
+      "show": true,
+      "nav": true,
+      "title": "Experience",
+      "layout": "timeline",
+      "items": [
+        {
+          "title": "Front-end Developer Freelance",
+          "subtitle": "MWeeb Information Technology Inc.",
+          "date": "June 2024 - February 2025",
+          "details": [
+            "Maintained and developed the project and accounting system further by adding new features and fixing bugs encountered during actual tests"
+          ]
+        },
+        {
+          "title": "Front-end Developer Intern",
+          "subtitle": "MWeeb Information Technology Inc.",
+          "date": "March - May 2024",
+          "details": [
+            "Documented the company's system for improved efficiency and future reference",
+            "Developed a project management dashboard using ReactJS",
+            "Assisted in developing an accounting management system",
+            "Brainstormed for new features"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "show": true,
+      "nav": true,
+      "title": "Skills",
+      "layout": "split",
+      "left": {
+        "heading": "Technical Skills",
+        "items": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Bootstrap",
+          "MySQL",
+          "Git"
+        ]
+      },
+      "right": {
+        "heading": "Soft Skills",
+        "items": [
+          "Problem Solving",
+          "Communication",
+          "Adaptability",
+          "Teamwork"
+        ]
+      }
+    },
+    {
+      "id": "projects",
+      "show": true,
+      "nav": true,
+      "title": "Projects",
+      "layout": "carousel",
+      "items": [
+        {
+          "show": true,
+          "title": "PROTO//FOLIO",
+          "subtitle": "Portfolio Website",
+          "image": "assets/img/project1.jpg",
+          "details": [
+            "A modern, responsive portfolio website.",
+            "Data is fetched from JSON file."
+          ],
+          "tags": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+          "links": [
+            {
+              "url": "https://github.com/WDCYap/ProtoFolio",
+              "text": "View Source",
+              "show": true
+            },
+            {
+              "url": "#about",
+              "text": "Live Demo",
+              "show": true
+            },
+            {
+              "url": "https://wdcyap.github.io/ProtoFolio",
+              "text": "Template Demo",
+              "show": true
+            }
+          ]
+        },
+        {
+          "show": false,
+          "title": "PROTO//NOTE",
+          "subtitle": "Note Taking App",
+          "image": "assets/img/project1.jpg",
+          "details": [
+            "A note taking app with AI-powered features.",
+            "Utilizes AI to generate notes using API key or local LLM."
+          ],
+          "tags": [
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "shadcn",
+            "Node",
+            "Vite",
+            "Tauri"
+          ],
+          "links": [
+            {
+              "url": "https://github.com/WDCYap/protonote",
+              "text": "View Source",
+              "show": false
+            },
+            {
+              "url": "https://wdcyap.github.io/protonote",
+              "text": "Live Demo",
+              "show": false
+            },
+            {
+              "url": "https://wdcyap.github.io/protonote",
+              "text": "Template Demo",
+              "show": false
+            }
+          ]
+        },
+        {
+          "show": false,
+          "title": "PROTO//ASSESS",
+          "subtitle": "Assessment Tool",
+          "image": "assets/img/project2.jpg",
+          "details": [
+            "An assessment tool for test taking.",
+            "Offers a seamless experience for creating, managing, and taking tests."
+          ],
+          "tags": [
+            "React",
+            "Remix",
+            "TypeScript",
+            "Tailwind CSS",
+            "Node",
+            "Vite",
+            "Tauri"
+          ],
+          "links": [
+            {
+              "url": "https://github.com/WDCYap/ProtoAssess",
+              "text": "View Source",
+              "show": false
+            },
+            {
+              "url": "https://wdcyap.github.io/ProtoAssess",
+              "text": "Live Demo",
+              "show": false
+            },
+            {
+              "url": "https://wdcyap.github.io/ProtoAssess",
+              "text": "Template Demo",
+              "show": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "show": true,
+      "nav": true,
+      "title": "Contact",
+      "layout": "list",
+      "items": [
+        {
+          "type": "email",
+          "text": "net.wyap@gmail.com",
+          "value": "net.wyap@gmail.com",
+          "show": true
+        },
+        {
+          "type": "phone",
+          "text": "+63 961 540 4220",
+          "value": "+639615404220",
+          "show": true
+        },
+        {
+          "type": "linkedin",
+          "text": "LinkedIn Profile",
+          "value": "https://www.linkedin.com/in/william-y-dev/",
+          "show": true
+        },
+        {
+          "type": "resume",
+          "text": "View Resume",
+          "value": "assets/resume.pdf",
+          "show": true
+        }
+      ]
+    }
+  ]
+}
